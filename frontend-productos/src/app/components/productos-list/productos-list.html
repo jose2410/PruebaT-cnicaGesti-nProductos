@@ -1,0 +1,21 @@
+<h2>Lista de Productos</h2>
+
+<table border="1" cellpadding="5">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Fecha Creación</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let p of productos">
+      <td>{{ p.id }}</td>
+      <td>{{ p.nombre }}</td>
+      <td>{{ p.precio }}</td>
+      <td>{{ p.fechaCreacion | date:'short' }}</td>
+    </tr>
+  </tbody>
+</table>

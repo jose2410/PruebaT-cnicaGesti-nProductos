@@ -1,0 +1,16 @@
+<h2>Registrar Producto</h2>
+
+<form [formGroup]="form" (ngSubmit)="guardar()">
+
+  <label>Nombre:</label><br>
+  <input type="text" formControlName="nombre"><br><br>
+
+  <label>Precio:</label><br>
+  <input type="number" formControlName="precio"><br><br>
+
+  <label>Fecha Creación:</label><br>
+  <input type="datetime-local" formControlName="fechaCreacion"><br><br>
+
+  <button type="submit">Guardar</button>
+
+</form>
